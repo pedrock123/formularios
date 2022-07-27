@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<!-- Para envio de formulario usamos os Metodos GET e POST -->
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off" >
+        <p><label for="inome">Nome:</label> <!-- Label ligada ao input text 'inome' -->
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> <!-- Label ligada ao input text 'isobrenome' -->
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p> <!-- Botão de enviar -->
+        <p><input type="reset" value="Resetar"></p> <!-- Botão de resetar -->
+    </form>
+</body>
+</html>
